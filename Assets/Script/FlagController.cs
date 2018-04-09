@@ -7,30 +7,18 @@ public class FlagController : MonoBehaviour {
 	private static bool isStart_timer = false;
 
 
-	public static void setCountDownAnimationFlag() {
-		if (isStart_anim)
-        {
-            isStart_anim = false;
-        }
-        else
-        {
-            isStart_anim = true;
-        }
+	public static void setCountDownAnimationFlag(bool flag)
+    {
+        isStart_anim = flag;
 	}
 
 	public static bool getCounrDownAnimationFlag() {
 		return isStart_anim;
 	}
 
-	public static void setTimerFlag() {
-		if (isStart_timer)
-        {
-            isStart_timer = false;
-        }
-        else
-        {
-            isStart_timer = true;
-        }
+	public static void setTimerFlag(bool flag)
+    {
+        isStart_timer = flag;
 	}
 
 	public static bool getTimerFlag() {

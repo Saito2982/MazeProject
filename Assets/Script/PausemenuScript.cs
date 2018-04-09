@@ -21,7 +21,6 @@ public class PausemenuScript : MonoBehaviour {
     public void retry()
     {
         Time.timeScale = 1f;
-        FlagController.setTimerFlag();
         fade.FadeIn(1, () =>
         {
             fade.FadeOut(1);
@@ -34,7 +33,6 @@ public class PausemenuScript : MonoBehaviour {
     public void retire()
     {
         Time.timeScale = 1f;
-        FlagController.setTimerFlag();
         fade.FadeIn(1, () =>
         {
             fade.FadeOut(1);

@@ -30,6 +30,9 @@ public class MapGenerator : MonoBehaviour
 
     private void Start()
     {
+        FlagController.setTimerFlag(false);
+        FlagController.setCountDownAnimationFlag(false);
+
         CreateMaze(mazesize, mazesize);
         MainCam = GameObject.Find("MainCamera");
         SubCam = GameObject.Find("SubCamera");
@@ -75,7 +78,7 @@ public class MapGenerator : MonoBehaviour
         yield return Dig(new Vector2(startPosW, startPosH));
 
         //カウントダウンアニメーション開始フラグ
-        FlagController.setCountDownAnimationFlag();
+        FlagController.setCountDownAnimationFlag(true);
         //カウントダウンアニメーション終了まで待機
         Invoke("DelayMethod", 5.0f);
 
@@ -125,9 +128,9 @@ public class MapGenerator : MonoBehaviour
     	//アニメーション終了時にスタートラインブロック破壊
         Destroy(mazeObject[1, 0]);
         //アニメーション非表示
-        FlagController.setCountDownAnimationFlag();
+        FlagController.setCountDownAnimationFlag(false);
         //タイマースタート
-        FlagController.setTimerFlag();
+        FlagController.setTimerFlag(true);
         //キャラ追従カメラに切り替え
         SubCam.SetActive(false);
     }

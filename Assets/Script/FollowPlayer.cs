@@ -5,6 +5,7 @@ public class FollowPlayer : MonoBehaviour
 {
     private GameObject targetObj;
     private Vector3 targetPos;
+    private float mouseInputX;
 
     void Start()
     {
@@ -19,9 +20,20 @@ public class FollowPlayer : MonoBehaviour
         transform.position += targetObj.transform.position - targetPos;
         targetPos = targetObj.transform.position;
 
-        // コントローラ右スティックの移動量
-        float mouseInputX = Input.GetAxis("Horizontal2");
-        float mouseInputY = Input.GetAxis("Vertical2");
+        if (Input.GetAxis("Horizontal2") != 0)
+        {
+            // コントローラ右スティックの移動量
+            mouseInputX = Input.GetAxis("Horizontal2");
+        }
+        else if (Input.GetAxis("Mouse X") != 0)
+        {
+            // マウスの移動量
+            mouseInputX = Input.GetAxis("Mouse X");
+        }
+        else
+        {
+            mouseInputX = 0;
+        }
         // targetの位置のY軸を中心に、回転（公転）する
         transform.RotateAround(targetPos, Vector3.up, mouseInputX * Time.deltaTime * 200f);  
     }

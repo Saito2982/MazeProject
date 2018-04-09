@@ -31,7 +31,7 @@ public class GoalScript : MonoBehaviour {
         Debug.Log(other.gameObject.name + "Enter");
         messageText.text = "GOAL!!";
         currentScene = SceneManager.GetActiveScene().name;
-        FlagController.setTimerFlag();
+        FlagController.setTimerFlag(false);
         SceneManager.LoadScene("result");
         //Invoke("DelayMethod", 1.0f);
     }

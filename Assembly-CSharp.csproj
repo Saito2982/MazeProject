@@ -80,7 +80,6 @@
      <Compile Include="Assets\Script\resultTime.cs" />
      <Compile Include="Assets\Script\retryGame.cs" />
      <Compile Include="Assets\Script\TimerScript.cs" />
-     <Compile Include="Assets\Script\UGuiPositionSetter.cs" />
      <None Include="Assets\Prefab\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\Prefab\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
      <None Include="Assets\Script\Fade\Materials\UI-Fade-Alpha.shader" />

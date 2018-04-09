@@ -125,7 +125,6 @@ GameObject:
   - component: {fileID: 19942354}
   - component: {fileID: 19942353}
   - component: {fileID: 19942352}
-  - component: {fileID: 19942351}
   - component: {fileID: 19942350}
   m_Layer: 5
   m_Name: Text
@@ -166,21 +165,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &19942351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 19942348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19026b8a222b9b0409e0d510ba6266c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionX: 0
-  positionY: 0
-  isUpdate: 1
-  margin: {x: 50, y: 20}
 --- !u!114 &19942352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1196,7 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

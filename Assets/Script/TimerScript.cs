@@ -25,7 +25,7 @@ public class TimerScript : MonoBehaviour
             time += Time.deltaTime;//毎フレームの時間を加算.
             int minute = (int)time / 60;//分.timeを60で割った値.
             int second = (int)time % 60;//秒.timeを60で割った余り.
-            int msecond = (int)(time * 100 % 100);
+            int msecond = (int)(time * 1000 % 1000);
             string minText, secText, msecText;//分・秒を用意.
 
             if (minute < 10)
@@ -38,10 +38,13 @@ public class TimerScript : MonoBehaviour
                 secText = second.ToString();
 
             if (msecond < 10)
+                msecText = "00" + msecond.ToString();
+
+            else if (msecond < 100)
                 msecText = "0" + msecond.ToString();
 
             else
-                msecText = "" + msecond.ToString();
+                msecText = msecond.ToString();
 
             text.text = minText + ":" + secText + "." + msecText;
 

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3FF60604-8EDD-B21F-60D6-09BFBBAF9467}</ProjectGuid>
+    <ProjectGuid>{201DE95D-8DE1-5BFB-838B-27DEE70D29D1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -51,18 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\InControl\Editor\InControlBuilder.cs" />
-     <Compile Include="Assets\InControl\Editor\InControlManagerEditor.cs" />
-     <Compile Include="Assets\InControl\Editor\InputManagerAssetGenerator.cs" />
-     <Compile Include="Assets\InControl\Editor\ProfileListGenerator.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\GenericListAdaptor.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\Internal\GUIHelper.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\Internal\ReorderableListResources.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\IReorderableListAdaptor.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\ReorderableListControl.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\ReorderableListFlags.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\ReorderableListGUI.cs" />
-     <Compile Include="Assets\InControl\Editor\ReorderableList\SerializedPropertyAdaptor.cs" />
+     <Compile Include="Assets\Editor\NCMBMenu.cs" />
+     <Compile Include="Assets\Editor\UpdateXcodeProject.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -156,7 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{B1265D3D-955F-697B-1D44-A604CAC2A84C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{FAE804A2-7D25-06F1-7F6C-26FF456C9809}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

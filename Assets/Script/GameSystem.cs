@@ -9,7 +9,7 @@ public class GameSystem : MonoBehaviour
 
     public void easy()
     {
-        fade.FadeIn(1, () =>
+        fade.FadeIn(2, () =>
         {
             fade.FadeOut(1);
             SceneManager.LoadScene("easy");
@@ -17,7 +17,7 @@ public class GameSystem : MonoBehaviour
     }
     public void normal()
     {
-        fade.FadeIn(1, () =>
+        fade.FadeIn(2, () =>
         {
             fade.FadeOut(1);
             SceneManager.LoadScene("normal");
@@ -25,7 +25,7 @@ public class GameSystem : MonoBehaviour
     }
     public void hard()
     {
-        fade.FadeIn(1, () =>
+        fade.FadeIn(2, () =>
         {
             fade.FadeOut(1);
             SceneManager.LoadScene("hard");
@@ -42,5 +42,15 @@ public class GameSystem : MonoBehaviour
         #else
 		        Application.Quit();
         #endif
+    }
+
+    public void GameSetting()
+    {
+        Application.LoadLevelAdditive("Setting");
+    }
+
+    public void OpenGuide()
+    {
+        Application.LoadLevelAdditive("Guide");
     }
 }

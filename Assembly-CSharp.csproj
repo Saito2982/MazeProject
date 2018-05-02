@@ -68,8 +68,10 @@
      <Compile Include="Assets\Script\FollowPlayer.cs" />
      <Compile Include="Assets\Script\GameSystem.cs" />
      <Compile Include="Assets\Script\GoalScript.cs" />
+     <Compile Include="Assets\Script\GuidemenuScript.cs" />
      <Compile Include="Assets\Script\IScore.cs" />
      <Compile Include="Assets\Script\LightScript.cs" />
+     <Compile Include="Assets\Script\loadRankingScript.cs" />
      <Compile Include="Assets\Script\MapGenerator.cs" />
      <Compile Include="Assets\Script\menu.cs" />
      <Compile Include="Assets\Script\menuPause.cs" />
@@ -123,6 +125,7 @@
      <Compile Include="Assets\Script\ScoreOrder.cs" />
      <Compile Include="Assets\Script\ScoreType.cs" />
      <Compile Include="Assets\Script\ScoreTypeSetting.cs" />
+     <Compile Include="Assets\Script\SettingMixScript.cs" />
      <Compile Include="Assets\Script\TimerScript.cs" />
      <Compile Include="Assets\Script\TimeScore.cs" />
      <None Include="Assets\Prefab\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />

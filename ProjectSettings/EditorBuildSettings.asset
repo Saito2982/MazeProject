@@ -6,20 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/title.unity
-    guid: 19df228843500584ca4ac4914c35153b
-  - enabled: 1
-    path: Assets/easy.unity
+    path: Assets/Scene/easy.unity
     guid: 004a56e8e46d8ac4f9b9537b45b4cb01
   - enabled: 1
-    path: Assets/normal.unity
-    guid: adf3fccd333524540b211c4cccabcb53
-  - enabled: 1
-    path: Assets/hard.unity
+    path: Assets/Scene/hard.unity
     guid: 27c8df3c0dd21d84a800fe4915673014
   - enabled: 1
-    path: Assets/result.unity
+    path: Assets/Scene/normal.unity
+    guid: adf3fccd333524540b211c4cccabcb53
+  - enabled: 1
+    path: Assets/Scene/result.unity
     guid: 45a5aa9ed59dc8d4ea113df0b715a443
   - enabled: 1
-    path: Assets/naichilab/unity-simple-ranking/Scenes/Ranking.unity
-    guid: 152244f5855414ac4a3874f14efa583c
+    path: Assets/Scene/title.unity
+    guid: 19df228843500584ca4ac4914c35153b
+  - enabled: 1
+    path: Assets/Scene/Ranking.unity
+    guid: 784151e36d6a1e04d83738dd7097e538
+  - enabled: 1
+    path: Assets/Scene/Setting.unity
+    guid: 021951d447ac4e84c9152268b81f8841
+  - enabled: 1
+    path: Assets/Scene/Guide.unity
+    guid: ffd057ca62dd0a144b348ae2da3c6b0d

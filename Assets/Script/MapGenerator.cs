@@ -20,7 +20,7 @@ public class MapGenerator : MonoBehaviour
     private GameObject MainCam;
     private GameObject SubCam;
 
-    private Fade fade = null;
+    //private Fade fade = null;
 
     private int mazeHeight;
     private int mazeWidth;

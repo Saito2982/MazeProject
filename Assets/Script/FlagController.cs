@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FlagController : MonoBehaviour {
+    //カウントダウンアニメーションフラグ
 	private static bool isStart_anim = false;
+    //タイマーフラグ
 	private static bool isStart_timer = false;
 
 
@@ -12,7 +14,7 @@ public class FlagController : MonoBehaviour {
         isStart_anim = flag;
 	}
 
-	public static bool getCounrDownAnimationFlag() {
+	public static bool getCountDownAnimationFlag() {
 		return isStart_anim;
 	}
 

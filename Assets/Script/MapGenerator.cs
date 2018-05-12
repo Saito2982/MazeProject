@@ -20,8 +20,6 @@ public class MapGenerator : MonoBehaviour
     private GameObject MainCam;
     private GameObject SubCam;
 
-    //private Fade fade = null;
-
     private int mazeHeight;
     private int mazeWidth;
     private bool[,] maze;
@@ -30,9 +28,12 @@ public class MapGenerator : MonoBehaviour
 
     private void Start()
     {
+        //タイマーフラグOFF
         FlagController.setTimerFlag(false);
+        //カウントダウンフラグOFF
         FlagController.setCountDownAnimationFlag(false);
 
+        //迷路作成
         CreateMaze(mazesize, mazesize);
         MainCam = GameObject.Find("MainCamera");
         SubCam = GameObject.Find("SubCamera");
@@ -77,7 +78,7 @@ public class MapGenerator : MonoBehaviour
         int startPosH = Enumerable.Range(0, mazeHeight).Where(i => i % 2 != 0).OrderBy(i => Guid.NewGuid()).First();
         yield return Dig(new Vector2(startPosW, startPosH));
 
-        //カウントダウンアニメーション開始フラグ
+        //カウントダウンアニメーションフラグON
         FlagController.setCountDownAnimationFlag(true);
         //カウントダウンアニメーション終了まで待機
         Invoke("DelayMethod", 5.0f);
@@ -127,7 +128,7 @@ public class MapGenerator : MonoBehaviour
     {
     	//アニメーション終了時にスタートラインブロック破壊
         Destroy(mazeObject[1, 0]);
-        //アニメーション非表示
+        //カウントダウンアニメーションフラグOFF
         FlagController.setCountDownAnimationFlag(false);
         //タイマースタート
         FlagController.setTimerFlag(true);

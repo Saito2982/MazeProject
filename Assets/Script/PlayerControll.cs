@@ -10,9 +10,10 @@ public class PlayerControll : MonoBehaviour
     private float speed = 2f;
     //Animatorを入れる変数
     private Animator animator;
-
+    
     private float moveX = 0f;
     private float moveZ = 0f;
+    //ランニングアニメーションキー
     private string key_run = "param_idletorunning";
 
     void Start()
@@ -28,11 +29,11 @@ public class PlayerControll : MonoBehaviour
             moveZ = Input.GetAxis("Vertical");
             if (moveX != 0 || moveZ != 0)
             {
-                Vector3 direction = new Vector3(moveX * speed, 0, moveZ * speed);
+                //入力があるときランニングアニメーション再生
                 animator.SetBool(key_run, true);
             }
             
-            //何もキーを押していない時はアニメーションをオフにする
+            //方向キーの入力がない時はランニングアニメーションをオフにする
             else
             {
                 animator.SetBool(key_run, false);

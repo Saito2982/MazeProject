@@ -71,6 +71,8 @@ namespace naichilab
             RankingDataClassName = GoalSystem.getSceneName() + "Data";
 
             this.sendScoreButton.interactable = false;
+            //カーソルをRetryにフォーカス
+            ResultSystem.select_retry();
 
             StartCoroutine(GetHighScoreAndRankingBoard());
         }

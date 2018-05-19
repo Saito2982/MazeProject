@@ -19,9 +19,7 @@ public class GoalSystem : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //ゴール時テキスト更新
-            messageText.text = "GOAL!!";
-            messageText.enabled = true;
+            messageText.enabled=true;
             //現在の読み込みシーン名取得
             currentScene = SceneManager.GetActiveScene().name;
             //タイマー停止
